@@ -17,6 +17,11 @@ add_executable(Server
         src/lst_timer.cpp
         src/http_conn.cpp
         src/WebServer.cpp
+        src/include/rwlatch.h
+        src/fiber.cpp
+        src/include/fiber.h
+        src/scheduler.cpp
+        src/include/scheduler.h
 )
 target_link_libraries(Server mysqlclient pthread)
 add_compile_options(-g )
