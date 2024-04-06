@@ -22,6 +22,8 @@ add_executable(Server
         src/include/fiber.h
         src/scheduler.cpp
         src/include/scheduler.h
+        src/include/io_manager.cpp
+        src/include/io_manager.h
 )
 target_link_libraries(Server mysqlclient pthread)
 add_compile_options(-g )
